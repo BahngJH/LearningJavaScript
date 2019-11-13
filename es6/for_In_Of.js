@@ -20,4 +20,12 @@ const hand =[randFace(),randFace(),randFace()];
 for(let face of hand){
     console.log(`You rolled...${face}`);
 }
+//문자열 병합
+console.log(3+5+"8 > 3+5+'8'" );
+console.log('3'+5+8 +" > '3'+5+8 ");
+
+//해체 할당
+const obj = {b:2,c:3,d:4}
+const {a,b,c} = obj;
+console.log(a,b,c);
 
