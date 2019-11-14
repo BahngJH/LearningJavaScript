@@ -1,4 +1,4 @@
-
+console.log(`여기서 부터 For_In_Of 시작!!!!!!!`)
 const player = {name:'Thomas', rank:'Midshipman', age:25};
 
 for(let prop in player){
