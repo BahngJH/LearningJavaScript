@@ -1,3 +1,4 @@
+console.log(`여기서 부터 7장 스코프 시작!!!!!!!`)
 const x = 3;
 
 function f(){
