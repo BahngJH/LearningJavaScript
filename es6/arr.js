@@ -71,8 +71,17 @@ function cardToString(c){
     const suits = {'H':'\u2665', 'C':'\u2663', 'D':'\u2666', 'S':'\u2660'};
     const values = {1:'A', 11:'J', 12:'Q', 13:'K'};
 
-    for(let i=2; i<=10; i++) values[i] = i;
+    for(let i=2; i<=10; i++){
+        values[i] = i;  
+    }
     return values[c.value] + suits[c.suit];
 }
 
 console.log(cards.filter(c =>c.value===2).map(cardToString));
+
+const wq = [5,7,2,4];
+const sum = wq.reduce((a,x) => a +=x,1);
+console.log(sum);
+
+const attributes = ['Nimble', 'Perceptive', 'Generous'];
+const html ='<ul><li>' + attributes.join('</li><li>') + '</li></ul>';   
